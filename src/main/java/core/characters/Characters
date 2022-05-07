@@ -1,0 +1,18 @@
+package main.java.core.characters;
+import main.java.core.move.Move;
+public interface Characters {
+    public int getPractice();
+    public void setPractice(int number);
+    public void increasePractice(int number);
+    public int getPh();
+    public void setPh(int number);
+    public void increasePh(int number);
+    public void decreasePh(int number);
+    public int getLm();
+    public void setLm(int number);
+    public void increaseLm(int number);
+    public void decreaseLm(int number);
+    public int getEnergyForAttack();
+    public void setEnergyForAttack(int number);
+    public Move getMove();
+}
