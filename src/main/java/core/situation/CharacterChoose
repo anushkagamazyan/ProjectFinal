@@ -1,1 +1,15 @@
+package main.java.core.situation;
+import  main.java.core.move.MoveMain;
+import main.java.core.move.StudentChoice;
+import main.java.core.move.LecturerChoice
+	public class CharacterChoose extends CurrentSituation {
+	    public CharacterChoose() {
+	        super.setCurrentSituationType(CurrentSituationType.SLIDES);
+	        super.setTitle("Start");
+	        super.setText("Choose your character:");
+	        super.addMove(1, MoveMain.getVariable().DoStudentChoice());
+	        super.addMove(2, MoveMain.getVariable().DoLecturerChoice());
+	    }
+	}
+
 
